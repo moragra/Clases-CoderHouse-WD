@@ -6,41 +6,94 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
+
 <body>
-        <h3>Nombres</h3>
-        <ul>
-            <li>Graciela</li>
-            <li>Mara</li>
-            <li>Louis</li>
-            <li>Marco</li>
-            <li>Martin</li>
-            <li>Jose</li>
-        </ul>
+    <a href="formularios.html#RetoCoder">Formulario Reto Coder</a>
+    <br>
+    <a href="formularios.html#Sexo">Formulario Sexo</a>
+    <br>
+    <a href="https://www.google.com" target="_blank">Ancla Blank</a>
+    <br>
+    <a href="https://www.google.com">Ancla SIN Blank</a>
+    <br>
+    <a href="img/pies.jpeg">Ver Imagen</a>
+    <br>
+    <a href="#Frutas">Ir a Frutas form</a>
+    <br>
+    <a href="#Paises">Ir a Paises form</a>
+
+    <h3>Nombres</h3>
+    <ul>
+        <li>Graciela</li>
+        <li>Mara</li>
+        <li>Louis</li>
+        <li>Marco</li>
+        <li>Martin</li>
+        <li>Jose</li>
+    </ul>
 
 
-        <h3>Pasos para preparar el mate</h3>
-        <ol>
-            <li>Comprar mate</li>
-            <li>Calentar el agua</li>
-            <li>Sacudir el polvo</li>
-            <li>Poner la yerba</li>
-            <li>Colocar la bombilla en diagonal</li>
-            <li>Disfrutar del mate</li>
-        </ol>
+    <h3>Pasos para preparar el mate</h3>
+    <ol>
+        <li>Comprar mate</li>
+        <li>Calentar el agua</li>
+        <li>Sacudir el polvo</li>
+        <li>Poner la yerba</li>
+        <li>Colocar la bombilla en diagonal</li>
+        <li>Disfrutar del mate</li>
+    </ol>
     
     <!-- command + shift + 7 o / para shortcut de command -->
 
     <table>
-        <tr>  <!-- fila -->
-            <th>Titulo</th> <!-- columna -->
+        <th>Titulo</th> <!-- column-titulo -->
+        <th>Frutas</th>
+        <tr>  <!-- row -->
             <td>Hola</td>
             <td>Graciela</td>
-        </tr>
+        </tr> 
         <tr>
-            <th>Frutas</th>
             <td>Manzanas</td>
             <td>Banana</td>
         </tr>
     </table>
+
+    <form action="">
+        <h3>Formulario de contact</h3>
+        <span>Escribe tu nombre:</span>
+        <input type="text">
+        <span>Escribe tu correo</span>
+        <input type="email" name="" id="">
+        <input type="submit">
+        <input type="reset" value="Limpiar">
+        <input type="button" value="Soy un boton">
+    </form >
+
+    
+
+    <form action="" id="Paises">
+        <h3>Escoge tu país</h3>
+        <label for="Argentina">Argentina</label>
+        <input type="radio" name="Pais" id="" value="Argentina">
+        <label for="Mexico">Mexico</label>
+        <input type="radio" name="Pais" id="" value="Mexico">
+        <label for="Costa Rica">Costa Rica</label>
+        <input type="radio" name="Pais" id="" value="Costa Rica">
+        <input type="button" value="Enviar">
+    </form>
+
+    <br>
+
+    <form action="" id="Frutas">
+        <fieldset>
+            <legend>Escoge una fruta</legend>
+            <select name="frutas" id="">
+                <option value="Manzanas">Manzanas</option>
+                <option value="Banana">Banana</option>
+                <option value="Pera">Pera</option>
+            </select>
+        </fieldset>
+    </form>
+    <br>
 </body>
 </html>
