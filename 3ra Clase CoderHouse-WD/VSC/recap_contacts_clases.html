@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacts</title>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="./recap_clases.html"></a>Inicio</li>
+            <li><a href="./recap_contacts_clases.html">Contacts</a></li>
+        </ul>
+    </nav>
+
+    <header>
+        <h1>Contacts</h1>
+    </header>
+
+    <main>
+        <form action="">
+            <input type="text" name="nombre" placeholder="Ingrese su nombre">
+            <input type="text" name="apellido" placeholder="Ingrese su apellido">
+            <input type="tel" name="tel" placeholder="Ingrese su telefono">
+            <textarea name="" placeholder="Ingrese un mensaje"></textarea>
+
+            <div>
+                <label for="hombre">Hombre</label>
+                <input type="radio" name="sexo" id="hombre" value="h">
+                <label for="mujer">Mujer</label>
+                <input type="radio" name="sexo" id="mujer" value="m">
+                <label for="noBinario">No Binario</label>
+                <input type="radio" name="sexo" id="noBinario" value="nB">
+            </div>
+            <select name="talle">
+                <option value="l">Large</option>
+                <option value="m">Medium</option>
+                <option value="s">Small</option>
+            </select>
+            <div>
+                <label for="acepto">Acepto terminos y condiciones</label>
+                <input type="checkbox" name="acepto" id="acepto" value="si" required>
+            </div>
+            <input type="submit" value="Enviar">
+        </form>
+    </main>
+    <aside>
+
+    </aside>
+    <footer>
+        <h5>2022 moragra, todos los derechos reservados</h5>
+    </footer>
+</body>
+</html>
