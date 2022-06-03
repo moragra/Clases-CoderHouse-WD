@@ -1,0 +1,16 @@
+h1 {
+    color: red;
+    text-align: center;
+}
+
+.spann {
+    color: blue;
+}
+
+.caja{
+    width: 200px;
+    border: 2px solid red;
+    padding: 5px 15px;
+    margin: 10px 20px 25px 15px;
+}
+
