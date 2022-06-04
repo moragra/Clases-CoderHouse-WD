@@ -1,16 +1,57 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
 h1 {
+    padding: 70px;
+    height: 300px;
     color: red;
     text-align: center;
 }
 
-.spann {
-    color: blue;
+.container{
+    width: 50%;
+    background-color: rgb(157, 90, 221);
+    padding: 10px 20px;
 }
 
-.caja{
-    width: 200px;
-    border: 2px solid red;
-    padding: 5px 15px;
-    margin: 10px 20px 25px 15px;
+.box{
+    width: 300px;
+    background-color: rgb(102, 102, 231);
+    color: black;
 }
 
+.box1 {
+    position: relative; /*relative se mueve infront todos los objetos dentro del container, deja hueco del espacio donde pertenecía*/
+    left: 100%;
+    top: 40px;
+    background-color: rgb(210, 80, 80);
+    z-index: 10;
+}
+
+.box2 {
+    position: absolute; /*absolute se mueve infront todos los objetos de la pantalla web completa, no deja hueco del espacio donde pertencía*/
+    left: 150px;
+    top: 100px;
+    background-color: rgb(231, 102, 203);
+}
+
+.navbar {
+    position: sticky; /*fixed lo deja en la posicion que se establezca en la pantalla aunque se scrolleee - sticky a partir cuando se cumple su top ahí se mantiene*/
+    width: 100%;
+    top: 0;
+    height: 50px;
+    background-color: rgb(176, 243, 243);
+    z-index: 20; /*el numero más grande es el que va ir de frente*/
+}
+
+.navbar ul {
+    color: black;
+}
+
+.box3 {
+    position: sticky;
+    top: 0;
+    background-color: rgb(101, 234, 110);
+}
