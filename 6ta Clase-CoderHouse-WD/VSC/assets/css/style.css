@@ -1,0 +1,45 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 150px auto 150px;
+    grid-template-rows: 150px 1fr 1fr 100px;
+    grid-template-areas: "nav header header"
+                        "nav  main   aside"
+                        "nav  section   aside"
+                        "nav  footer footer";
+}
+
+.navbar {
+    grid-area: nav;
+    background-color: aqua;
+}
+
+.header {
+    grid-area: header;
+    background-color: blue;
+}
+
+.main {
+    grid-area: main;
+    background-color: brown;
+}
+
+.adds {
+    grid-area: aside;
+    background-color: blueviolet;
+}
+
+.news {
+    grid-area: section;
+    background-color: crimson;
+}
+
+.footer {
+    grid-area: footer;
+    background-color: coral;
+}

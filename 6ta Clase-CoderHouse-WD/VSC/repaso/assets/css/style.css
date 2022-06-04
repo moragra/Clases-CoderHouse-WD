@@ -1,0 +1,35 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 70px 250px auto 70px;
+    grid-template-areas: "navbar navbar navbar navbar"
+                        "header header header header"
+                        "main main main main"
+                        "footer footer footer footer";
+}
+
+.navbar{
+    grid-area: navbar;
+    background-color: blueviolet;
+}
+
+.header {
+    grid-area: header;
+    background-color: aquamarine;
+}
+
+.main {
+    grid-area: main;
+    background-color: blue;
+}
+
+.footer {
+    grid-area: footer;
+    background-color: yellow;
+}
