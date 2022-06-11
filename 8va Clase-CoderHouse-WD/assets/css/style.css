@@ -4,11 +4,73 @@
     box-sizing: border-box;
 }
 
-header {
-    width: 100%;
-    background-color: black;
+.boxes{
+    display: flex;
 }
 
-header h1 {
-    color: yellow;
+.box {
+    margin: 10px;
+    padding: 10px;
+    width: 200px;
+    background-image: linear-gradient(to bottom, red, green);
+}
+
+.box2 {
+    margin: 10px;
+    padding: 10px;
+    width: 200px;
+    background-image: radial-gradient(ellipse at center, red, green);
+}
+
+.imgs {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.img{
+    margin: 10px;
+    transition: transform 3s, width 5s;
+    width: 200px;
+}
+
+.img1:hover {
+    transform: translate(20px, 5px);
+}
+
+.img2:hover {
+    transform: rotateX(360deg);
+}
+
+.img3:hover {
+    transform: rotateY(360deg);
+}
+
+.img4:hover {
+    transform: rotateZ(360deg)
+}
+
+.img5:hover {
+    transform: scale(2);
+}
+
+.img6:hover {
+    transform: skewy(10deg);
+}
+
+.img7:hover {
+    transform: translate(20px, 5px) rotate(360deg) scale(1.5);
+}
+
+.form{
+    padding: 10px;
+}
+
+.form input{
+    width: 100px;
+    transition: all 3s;
+    padding: 10px;
+}
+
+.form input:focus{
+    width: 200px; 
 }
