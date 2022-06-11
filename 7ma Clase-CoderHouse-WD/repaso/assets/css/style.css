@@ -1,0 +1,131 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto auto auto;
+    grid-template-areas:    "nav    nav     nav"
+                            "main   main    main"
+                            "footer footer  footer";
+}
+
+.main_img {
+    width: 300px;
+}
+
+.logo {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.logo_img{
+    width: 100px;
+}
+
+.nav {
+    grid-area: nav;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.nav ul {
+    display: flex;
+    list-style: none;
+}
+
+.nav ul li {
+    padding: 10px;
+}
+
+.nav ul li a {
+    text-decoration: none;
+    border-right: 1px solid black;
+    padding: 0 10px;
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.main {
+    grid-area: main;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.main p {
+    padding: 30px;
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.footer {
+    grid-area: footer;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.footer h5{
+    margin: 15px 0;
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.footer h2 {
+    margin-bottom: 15px;
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+@media (min-width:576px){
+
+
+    .nav ul {
+        align-items: center;
+    }
+    
+    .nav ul:nth-child(2){
+        order: 1;
+    }
+    .nav ul:nth-child(3){
+        order: 3;
+    }
+
+    .logo{
+        width: 120px;
+        order: 2;
+        margin: 10px;
+        padding: 10px;
+    }
+
+    .main {
+        flex-direction: row;
+    }
+
+
+    .main_img {
+        padding: 20px;
+    }
+
+    .footer {
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+    .footer h2 {
+        margin: 0;
+        order: 3;
+    }
+
+    .footer h5 {
+        margin: 0;
+        order: 1;
+    }
+}
