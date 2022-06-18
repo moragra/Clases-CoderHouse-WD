@@ -1,0 +1,72 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+
+.redondel {
+    background-color: red;
+    width: 100px;
+    height: 100px;
+    border-radius: 50px;
+    margin: 10px;
+    animation-name: mover;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    animation-delay: 3s;
+}
+
+@keyframes mover {
+    0%{
+        transform: translate(0px, 0px);
+    }
+    25%{
+        transform: translate(100px, 0px);
+    }
+    50%{
+        transform: translate(100px, 100px);
+    }
+    75%{
+        transform: translate(0px, 100px);
+    }
+    100%{
+        transform: translate(0px 0px);
+    }
+}
+
+.redondel2 {
+    background-color: yellowgreen;
+    width: 100px;
+    height: 100px;
+    border-radius: 50px;
+    margin: 150px 10px;
+    animation-name: mover_recto;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    animation-timing-function: cubic-bezier(0.55, 0.055, 0.675, 0.19);
+}
+
+@keyframes mover_recto{
+    0%{
+        transform: translate(0px, 0px);
+    }
+    50%{
+        transform: translate(300px, 0px);
+    }
+    100%{
+        transform: translate(0px,0px);
+    }
+}
+
+.box{
+    margin: 30px;
+    padding: 10px;
+    width: 300px;
+    border: 1px black solid;
+}
+
+.box p {
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;
+}
