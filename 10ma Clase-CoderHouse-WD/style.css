@@ -1,0 +1,107 @@
+*{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.contenedor{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.style {
+    background-color: brown;
+    width: 90%;
+    padding: 10px;
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.nav{
+    background-color: blue;
+    margin-bottom: 10px;
+    display: flex;
+    padding: 10px;
+    justify-content: space-between;
+}
+
+.nav ul{
+    list-style: none;
+    display: flex;
+}
+
+.nav a {
+    color: white;
+    padding: 10px;
+    text-decoration: none;
+}
+
+.boton:hover{
+    background-color: blueviolet;
+}
+
+.boton:active{
+    background-color: brown;
+}
+
+.boton{
+    text-decoration: none;
+    background-color: blue;
+    padding: 5px 10px;
+    color: white;
+    border-radius: 5px;
+    margin: 5px;
+}
+
+.botones{
+    margin: 10px;
+}
+
+/*
+    div:not(.style){
+    background-color: aqua;
+}*/
+
+
+.lista p:nth-child(3n){
+    background-color: red;
+}
+
+.form{
+    margin: 20px;
+}
+
+.grupo{
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+}
+
+.form label{
+    width: 70px;
+}
+
+.form input{
+    padding: 5px 10px;
+    border-radius: 5px;
+    border: 2px solid gray;
+}
+
+@media (min-width: 768px){
+
+    .nav{
+        flex-direction: row;
+    }
+    .style{
+        background-color: blue;
+        width: 40%;
+    }
+    .contenedor{
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+}
+
