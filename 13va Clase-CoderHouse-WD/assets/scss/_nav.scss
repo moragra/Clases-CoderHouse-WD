@@ -1,21 +1,14 @@
-.nav {
-    background-color: $colorPrimario;
-    ul {
-        list-style: none;
+.nav{
+    background-color: brown;
+    ul{
         display: flex;
-        li {
-            padding: 10px;
-            a {
+        li{
+            list-style: none;
+            padding: 15px;
+            a{
                 text-decoration: none;
-                font-family: Arial, Helvetica, sans-serif;
-                color: white;
-                font-size: 20px;
-                opacity: .80;
-                &:hover{
-                    opacity: 1;
-                }
+                color: whitesmoke;
             }
         }
-        
     }
 }
