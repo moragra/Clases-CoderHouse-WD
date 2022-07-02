@@ -1,0 +1,69 @@
+.row{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+@for $var from 1 through 10 {
+    .col-#{$var}{
+        width: 10% * $var;
+    }
+}
+
+@media(min-width:760px){
+    @for $var from 1 through 10 {
+        .col-md#{$var}{
+            width: 10% * $var;
+        }
+    }
+}
+
+$justiify:(
+    star:start, 
+    center:center, 
+    end:end, 
+    around:space-around, 
+    between:space-between, 
+    evenly:space-evenly
+);
+
+$colores:(
+    primario:black,
+    secundario: gray
+);
+
+@each $clave, $var in $justiify {
+    .justify-content-#{$clave}{
+        justify-content: $var;
+    }
+}
+
+@each $var in end,center,start {
+    .align-items-#{$var}{
+        align-items: $var;
+    }
+}
+
+$boton:(
+    padding: 8px 15px,
+    border: 0,
+    border-radius: 5px,
+    color: white
+);
+
+.btn {
+    padding: map-get($boton, padding);
+    border: map-get($boton, border);
+    border-radius: map-get($boton, border-radius);
+    color: map-get($boton, color);
+}
+
+@each $clave, $var in $colores {
+    .btn-#{$clave}{
+        background-color: $var;
+    }
+}
+
+.btn-terciario{
+    @extend .btn;
+    background-color: brown;
+}
